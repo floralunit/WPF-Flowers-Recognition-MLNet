@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitHub\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet.csproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet.csproj",
+        "projectName": "WPF-Flowers-Recognition-MLNet",
+        "projectPath": "D:\\GitHub\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet.csproj",
+        "packagesPath": "C:\\Users\\anya7\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\WPF-Flowers-Recognition-MLNet\\WPF-Flowers-Recognition-MLNet\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anya7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Работать!!!!\\TestNuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Microsoft.ML.Vision": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "SciSharp.TensorFlow.Redist": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

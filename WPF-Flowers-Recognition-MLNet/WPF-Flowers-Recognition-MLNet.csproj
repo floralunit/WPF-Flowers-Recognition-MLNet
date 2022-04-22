@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WPF_Flowers_Recognition_MLNet</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.7.0" />
+    <PackageReference Include="Microsoft.ML.Vision" Version="1.7.0" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup Label="FlowerMLModel">
+    <None Include="FlowerMLModel.consumption.cs">
+      <DependentUpon>FlowerMLModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="FlowerMLModel.training.cs">
+      <DependentUpon>FlowerMLModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="FlowerMLModel.zip">
+      <DependentUpon>FlowerMLModel.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
